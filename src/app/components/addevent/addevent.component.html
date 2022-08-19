@@ -1,0 +1,40 @@
+
+		<div class="contact_info_container">
+			<div class="container">
+				<div class="row">
+
+					<!-- Contact Form -->
+					<div class="col-lg-6">
+						<div class="contact_form">
+							<div class="contact_info_title">Add Events</div>
+							<form #addForm="ngForm" (ngSubmit)="add()">
+								
+
+								<div>
+									<div class="form_title">Name</div>
+									<input type="text"  class="form-control" [(ngModel)]="event.eName" name="name">
+								</div>
+
+                                <div>
+									<div class="form_title">price</div>
+									<input type="text"  class="form-control" [(ngModel)]="event.price" name="price" >
+								</div>
+                                <div>
+									<div class="form_title">description</div>
+									<textarea class="comment_input comment_textarea" [(ngModel)]=" event.desc" name="desc" ></textarea>
+								</div>
+                                <div>
+									<div class="form_title">Date</div>
+									<input type="date"  class="form-control" [(ngModel)]="event.date" name="date" >
+								</div>
+
+
+								
+							
+								<div>
+									<input type="submit" class="comment_button trans_200" value="Add">
+								</div>
+							</form>
+						</div>
+					</div>
+                </div>            

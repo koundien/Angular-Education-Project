@@ -1,0 +1,28 @@
+<table class="table" >
+    <tr>
+        <th>ID</th>
+        <th>Name </th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Place</th>
+        <th>Action</th>
+    </tr>
+    
+    <tr  *ngFor="let c of courses  " >
+        
+            <td >{{c._id}}</td>
+            <td>{{c.cName}}</td>
+            <td>{{c.cDesc}}</td>
+            <td>{{c.cPrice}}</td>
+            <td>{{c.cNbre}}</td>
+            <td>
+                
+                <button class="btn btn-warning" (click)="goToEdit(c._id)">Edit</button>
+                <button class="btn btn-warning" (click)="delete(c._id)">Delete</button>
+            </td>
+
+      
+       
+
+    </tr>
+</table>

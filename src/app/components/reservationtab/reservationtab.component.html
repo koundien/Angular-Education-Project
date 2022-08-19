@@ -1,0 +1,25 @@
+<table class="table" >
+    <tr>
+        <th>ID</th>
+        <th>Type </th>
+        <th>Description</th>
+        
+    </tr>
+    
+    <tr  *ngFor="let c of tab  " >
+        
+            <td >{{c._id}}</td>
+            <td>{{c.type}}</td>
+            <td>{{c.cDesc}}</td>
+            
+            <td>
+                
+                <!-- <button class="btn btn-warning" (click)="goToEdit(c._id)">Edit</button>
+                <button class="btn btn-warning" (click)="delete(c._id)">Delete</button> -->
+            </td>
+
+      
+       
+
+    </tr>
+</table>

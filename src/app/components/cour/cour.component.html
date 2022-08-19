@@ -1,0 +1,32 @@
+
+  <div class=" ">
+    <div class="course">
+      <div class="course_image"><img src="assets/images/course_1.jpg" alt=""></div>
+      <div class="course_body">
+        <h3 class="course_title">{{x.cName}}</h3>
+        <div class="course_teacher">{{name}}</div>
+        <div class="course_text">
+          <p>{{x.cDesc}}</p>
+        </div>
+      </div>
+      <div class="course_footer">
+        <div
+          class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+          <div class="course_info">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <span>{{x.cNbre}} Student</span>
+          </div>
+          <div class="course_info">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5 Ratings</span>
+          </div>
+          <div class="course_price ml-auto">${{x.cPrice}}</div>
+        </div>
+        <div class="col">
+          
+          <button class="btn btn-danger" (click)="reservation(x._id)"> reserve</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>

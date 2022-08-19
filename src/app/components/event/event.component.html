@@ -1,0 +1,34 @@
+<div class=" ">
+
+    <div class="event event_mid">
+      <div class="event_image"><img src="assets/images/event_2.jpg" alt=""></div>
+      <div class="event_body d-flex flex-row align-items-start justify-content-start">
+        <div class="event_date">
+          <div class="d-flex flex-column align-items-center justify-content-center trans_200">
+            <div class="event_day trans_200">{{x.date | date: 'dd'}}</div>
+            <div class="event_month trans_200">{{x.date | date: 'MM'}}</div>
+          </div>
+        </div>
+        <div class="event_content">
+          <div class="event_title"><a href="#">{{x.eName}}</a></div>
+          <div class="event_info_container">
+            <div class="event_info"><i class="currency"
+                aria-hidden="true"></i><span>${{x.price}}</span></div>
+
+            
+            <div class="event_text">
+              <p>{{x.desc}}
+              </p>
+            </div>
+            <div class="col">
+          
+              <button class="btn btn-danger" (click)="reservation(x._id)"> reserve</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  
+</div>

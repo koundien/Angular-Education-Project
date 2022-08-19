@@ -1,0 +1,32 @@
+
+		<div class="contact_info_container" style="margin-top: 150PX;">
+			<div class="container">
+				<div class="row">
+
+					<!-- Contact Form -->
+					<div class="col-lg-6">
+						<div class="contact_form">
+							<div class="contact_info_title">Login Form</div>
+							<form #loginForm="ngForm" (ngSubmit)="login()">
+
+								<div>
+									<div class="form_title">Email</div>
+									<input type="text"  class="form-control" [(ngModel)]="users.email" name="email">
+								</div>
+
+                                <div>
+									<div class="form_title">Passeword</div>
+									<input type="text"  class="form-control" [(ngModel)]="users.pwd" name="pwd" >
+								</div>
+
+
+								
+							
+								<div>
+									<input type="submit" class="comment_button trans_200" value="submit now">
+								</div>
+							</form>
+							<span style="color: red;">{{errorMsg}}</span>
+						</div>
+					</div>
+                </div>            
